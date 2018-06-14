@@ -1,0 +1,269 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/6f7654b/
+$	tags	/^AccountRepository	repositories\/AccountRepository.java	\/^public interface AccountRepository ext/;"	f	interface:CustomerRepository.OperationRepository.AccountRepository
+$	tags	/^CityRepository	repositories\/CityRepository.java	\/^public interface CityRepository extends Gene/;"	f	interface:CustomerRepository.OperationRepository.AccountRepository.CityRepository
+$	tags	/^CustomerRepository	repositories\/CustomerRepository.java	\/^public interface CustomerRepository /;"	f	interface:CustomerRepository
+$	tags	/^DefaultRepositoryFactory	repositories\/custom\/DefaultRepositoryFactory.java	\/^public class Def/;"	f	class:CustomerRepository.OperationRepository.AccountRepository.CityRepository.UserRepository.DefaultRepositoryFactory
+$	tags	/^OperationRepository	repositories\/OperationRepository.java	\/^public interface OperationReposito/;"	f	interface:CustomerRepository.OperationRepository
+$	tags	/^UserRepository	repositories\/UserRepository.java	\/^public interface UserRepository extends Gene/;"	f	interface:CustomerRepository.OperationRepository.AccountRepository.CityRepository.UserRepository
+Account	model/Account.java	/^public class Account extends BaseEntity {$/;"	c
+AccountRepository	repositories/AccountRepository.java	/^public interface AccountRepository extends GenericRepository<Account, Long> {$/;"	i
+AccountRepository	tags	/^AccountRepository	repositories\/AccountRepository.java	\/^public interface AccountRepository ext/;"	i	interface:CustomerRepository.OperationRepository
+AccountRestController	rest/controller/AccountRestController.java	/^public class AccountRestController extends CrudController<Account> {$/;"	c
+AccountService	services/AccountService.java	/^public class AccountService extends BaseService<Account> {$/;"	c
+BaseEntity	model/base/BaseEntity.java	/^public class BaseEntity implements IEntity, Serializable {$/;"	c
+BaseService	services/base/BaseService.java	/^    public BaseService() {$/;"	m	class:BaseService
+BaseService	services/base/BaseService.java	/^public abstract class BaseService<T extends IEntity> implements Service<T>, Serializable {$/;"	c
+CREDIT	model/OperationType.java	/^    CREDIT("Credit"),$/;"	e	enum:OperationType	file:
+City	model/City.java	/^public class City extends BaseEntity {$/;"	c
+CityRepository	repositories/CityRepository.java	/^public interface CityRepository extends GenericRepository<City, Long> {$/;"	i
+CityRepository	tags	/^CityRepository	repositories\/CityRepository.java	\/^public interface CityRepository extends Gene/;"	i	interface:CustomerRepository.OperationRepository.AccountRepository
+CityRestController	rest/controller/CityRestController.java	/^public class CityRestController extends CrudController<City> {$/;"	c
+CityService	services/CityService.java	/^public class CityService extends BaseService<City> implements Service<City> {$/;"	c
+CrudController	rest/controller/base/CrudController.java	/^public abstract class CrudController<T extends IEntity> extends ErrorHandlingController {$/;"	c
+CustomObjectMapper	jackson/databind/CustomObjectMapper.java	/^    public CustomObjectMapper() {$/;"	m	class:CustomObjectMapper
+CustomObjectMapper	jackson/databind/CustomObjectMapper.java	/^public class CustomObjectMapper extends ObjectMapper {$/;"	c
+Customer	model/Customer.java	/^public class Customer extends BaseEntity {$/;"	c
+CustomerRepository	repositories/CustomerRepository.java	/^public interface CustomerRepository extends GenericRepository<Customer, Long> {$/;"	i
+CustomerRepository	tags	/^CustomerRepository	repositories\/CustomerRepository.java	\/^public interface CustomerRepository /;"	i
+CustomerRestController	rest/controller/CustomerRestController.java	/^public class CustomerRestController extends CrudController<Customer> {$/;"	c
+CustomerService	services/CustomerService.java	/^public class CustomerService extends BaseService<Customer> {$/;"	c
+DEBIT	model/OperationType.java	/^    DEBIT("Debit");$/;"	e	enum:OperationType	file:
+DateTimeConverter	services/base/converters/DateTimeConverter.java	/^public class DateTimeConverter implements Converter {$/;"	c
+DefaultRepositoryFactory	repositories/custom/DefaultRepositoryFactory.java	/^	public DefaultRepositoryFactory(EntityManager entityManager) {$/;"	m	class:DefaultRepositoryFactory
+DefaultRepositoryFactory	repositories/custom/DefaultRepositoryFactory.java	/^public class DefaultRepositoryFactory extends JpaRepositoryFactory {$/;"	c
+DefaultRepositoryFactory	tags	/^DefaultRepositoryFactory	repositories\/custom\/DefaultRepositoryFactory.java	\/^public class Def/;"	c	interface:CustomerRepository.OperationRepository.AccountRepository.CityRepository.UserRepository
+DefaultRepositoryFactoryBean	repositories/custom/DefaultRepositoryFactoryBean.java	/^	public DefaultRepositoryFactoryBean(Class<? extends T> repositoryInterface) {$/;"	m	class:DefaultRepositoryFactoryBean
+DefaultRepositoryFactoryBean	repositories/custom/DefaultRepositoryFactoryBean.java	/^public class DefaultRepositoryFactoryBean<T extends JpaRepository<S, ID>, S, ID extends Serializ/;"	c
+DynamicTypeService	services/base/DynamicTypeService.java	/^public class DynamicTypeService implements Serializable {$/;"	c
+EntityConverter	services/base/converters/EntityConverter.java	/^public class EntityConverter implements Converter {$/;"	c
+EnumAndEntityConvertUtilsBean	services/base/converters/EnumAndEntityConvertUtilsBean.java	/^public class EnumAndEntityConvertUtilsBean extends ConvertUtilsBean {$/;"	c
+EnumConverter	services/base/converters/EnumConverter.java	/^public class EnumConverter implements Converter {$/;"	c
+ErrorDTO	rest/controller/base/ErrorDTO.java	/^public class ErrorDTO {$/;"	c
+ErrorHandlingController	rest/controller/base/ErrorHandlingController.java	/^public abstract class ErrorHandlingController {$/;"	c
+GenericRepository	repositories/custom/GenericRepository.java	/^public interface GenericRepository<T, ID extends Serializable> extends JpaRepository<T, ID>,$/;"	i
+GenericRepositoryImpl	repositories/custom/GenericRepositoryImpl.java	/^    public GenericRepositoryImpl(JpaEntityInformation<T, ID> entityInformation, EntityManager en/;"	m	class:GenericRepositoryImpl
+GenericRepositoryImpl	repositories/custom/GenericRepositoryImpl.java	/^public class GenericRepositoryImpl<T, ID extends Serializable> extends QueryDslJpaRepository<T, /;"	c
+IEntity	model/base/IEntity.java	/^public interface IEntity {$/;"	i
+MAX_PHONE_NUMBER_LENGTH	model/Customer.java	/^    private static final int MAX_PHONE_NUMBER_LENGTH = 10;$/;"	f	class:Customer	file:
+MIN_PHONE_NUMBER_LENGTH	model/Customer.java	/^    private static final int MIN_PHONE_NUMBER_LENGTH = 7;$/;"	f	class:Customer	file:
+Operation	model/Operation.java	/^public class Operation extends BaseEntity {$/;"	c
+OperationRepository	repositories/OperationRepository.java	/^public interface OperationRepository extends GenericRepository<Operation, Long> {$/;"	i
+OperationRepository	tags	/^OperationRepository	repositories\/OperationRepository.java	\/^public interface OperationReposito/;"	i	interface:CustomerRepository
+OperationRestController	rest/controller/OperationRestController.java	/^public class OperationRestController extends CrudController<Operation> {$/;"	c
+OperationService	services/OperationService.java	/^public class OperationService extends BaseService<Operation> implements Service<Operation> {$/;"	c
+OperationType	model/OperationType.java	/^    private OperationType(String label) {$/;"	m	class:OperationType	file:
+OperationType	model/OperationType.java	/^public enum OperationType {$/;"	g
+SearchConfig	services/base/search/SearchConfig.java	/^public class SearchConfig implements Serializable {$/;"	c
+SearchConfigEditor	services/base/search/SearchConfigEditor.java	/^public class SearchConfigEditor extends PropertyEditorSupport {$/;"	c
+Service	services/base/Service.java	/^public interface Service<T extends IEntity> {$/;"	i
+User	model/User.java	/^public class User extends BaseEntity {$/;"	c
+UserRepository	repositories/UserRepository.java	/^public interface UserRepository extends GenericRepository<User, Long> {$/;"	i
+UserRepository	tags	/^UserRepository	repositories\/UserRepository.java	\/^public interface UserRepository extends Gene/;"	i	interface:CustomerRepository.OperationRepository.AccountRepository.CityRepository
+UserRestController	rest/controller/UserRestController.java	/^public class UserRestController extends CrudController<User> {$/;"	c
+UserService	services/UserService.java	/^public class UserService extends BaseService<User> {$/;"	c
+account	model/Operation.java	/^    private Account account;$/;"	f	class:Operation	file:
+accountNumber	model/Account.java	/^    private String accountNumber;$/;"	f	class:Account	file:
+accountService	rest/controller/AccountRestController.java	/^    private AccountService accountService;$/;"	f	class:AccountRestController	file:
+accounts	model/Customer.java	/^    private List<Account> accounts;$/;"	f	class:Customer	file:
+active	model/Account.java	/^    private Boolean active;$/;"	f	class:Account	file:
+add	rest/controller/base/CrudController.java	/^	public ResponseEntity add(@RequestBody Map<String, Object> newEntityValues) {$/;"	m	class:CrudController
+add	services/base/BaseService.java	/^    public void add(Map<String, Object> newEntityValues) {$/;"	m	class:BaseService
+add	services/base/BaseService.java	/^    public void add(T entity) {$/;"	m	class:BaseService
+add	services/base/Service.java	/^    void add(Map<String, Object> newEntityValues);$/;"	m	interface:Service
+add	services/base/Service.java	/^    void add(T entity);$/;"	m	interface:Service
+addDetail	rest/controller/base/ErrorDTO.java	/^    public void addDetail(String detail) {$/;"	m	class:ErrorDTO
+address	model/Customer.java	/^    private String address;$/;"	f	class:Customer	file:
+age	model/Customer.java	/^    private Integer age;$/;"	f	class:Customer	file:
+amount	model/Operation.java	/^    private BigDecimal amount;$/;"	f	class:Operation	file:
+and	services/base/BaseService.java	/^    private BooleanExpression and(BooleanExpression old, BooleanExpression newPredidcate) {$/;"	m	class:BaseService	file:
+builder	repositories/custom/GenericRepositoryImpl.java	/^    private final PathBuilder<T> builder;$/;"	f	class:GenericRepositoryImpl	file:
+city	model/Customer.java	/^    private City city;$/;"	f	class:Customer	file:
+cityService	rest/controller/CityRestController.java	/^    private CityService cityService;$/;"	f	class:CityRestController	file:
+comment	model/Operation.java	/^    private String comment;$/;"	f	class:Operation	file:
+convert	services/base/converters/DateTimeConverter.java	/^    public <T> T convert(Class<T> type, Object value) {$/;"	m	class:DateTimeConverter
+convert	services/base/converters/EntityConverter.java	/^    public <T> T convert(Class<T> type, Object value) {$/;"	m	class:EntityConverter
+convert	services/base/converters/EnumConverter.java	/^    public Object convert(Class type, Object value) {$/;"	m	class:EnumConverter
+count	rest/controller/base/CrudController.java	/^	public ResponseEntity<Long> count(@RequestParam("searchConfig") SearchConfig searchConfig) {$/;"	m	class:CrudController
+count	services/base/BaseService.java	/^    public long count() {$/;"	m	class:BaseService
+count	services/base/BaseService.java	/^    public long count(SearchConfig config) {$/;"	m	class:BaseService
+count	services/base/Service.java	/^    long count();$/;"	m	interface:Service
+count	services/base/Service.java	/^    long count(SearchConfig config);$/;"	m	interface:Service
+country	model/City.java	/^    private String country;$/;"	f	class:City	file:
+createQuery	repositories/custom/GenericRepositoryImpl.java	/^    protected final JPQLQuery createQuery(Predicate... predicate) {$/;"	m	class:GenericRepositoryImpl
+createRepositoryFactory	repositories/custom/DefaultRepositoryFactoryBean.java	/^	protected RepositoryFactorySupport createRepositoryFactory(EntityManager em) {$/;"	m	class:DefaultRepositoryFactoryBean
+customer	model/Account.java	/^    private Customer customer;$/;"	f	class:Account	file:
+customerService	rest/controller/CustomerRestController.java	/^    private CustomerService customerService;$/;"	f	class:CustomerRestController	file:
+delete	rest/controller/base/CrudController.java	/^	public ResponseEntity delete(@PathVariable("id") Long id) {$/;"	m	class:CrudController
+delete	services/base/BaseService.java	/^    public void delete(Long id) {$/;"	m	class:BaseService
+delete	services/base/BaseService.java	/^    public void delete(T entity) {$/;"	m	class:BaseService
+delete	services/base/Service.java	/^    void delete(Long id);$/;"	m	interface:Service
+delete	services/base/Service.java	/^    void delete(T entity);$/;"	m	interface:Service
+deleteMany	services/base/BaseService.java	/^    public void deleteMany(Iterable<Long> ids) {$/;"	m	class:BaseService
+deleteMany	services/base/Service.java	/^    void deleteMany(Iterable<Long> ids);$/;"	m	interface:Service
+description	rest/controller/base/ErrorDTO.java	/^    private final String description;$/;"	f	class:ErrorDTO	file:
+details	rest/controller/base/ErrorDTO.java	/^    private List<String> details = new ArrayList<String>();$/;"	f	class:ErrorDTO	file:
+dynamicTypeService	services/base/converters/EntityConverter.java	/^    private DynamicTypeService dynamicTypeService;$/;"	f	class:EntityConverter	file:
+em	repositories/custom/GenericRepositoryImpl.java	/^    private final EntityManager em;$/;"	f	class:GenericRepositoryImpl	file:
+em	services/base/BaseService.java	/^    protected EntityManager em;$/;"	f	class:BaseService
+em	services/base/DynamicTypeService.java	/^    private EntityManager em;$/;"	f	class:DynamicTypeService	file:
+email	model/Customer.java	/^    private String email;$/;"	f	class:Customer	file:
+entityClass	services/base/BaseService.java	/^    protected final Class<? extends IEntity> entityClass;$/;"	f	class:BaseService
+entityConverter	services/base/converters/EnumAndEntityConvertUtilsBean.java	/^    private EntityConverter entityConverter;$/;"	f	class:EnumAndEntityConvertUtilsBean	file:
+entityInformation	repositories/custom/GenericRepositoryImpl.java	/^    private final JpaEntityInformation<T, ?> entityInformation;$/;"	f	class:GenericRepositoryImpl	file:
+enumConverter	services/base/converters/EnumAndEntityConvertUtilsBean.java	/^    private final EnumConverter enumConverter = new EnumConverter();$/;"	f	class:EnumAndEntityConvertUtilsBean	file:
+fetchFields	services/base/search/SearchConfig.java	/^    private List<String> fetchFields;$/;"	f	class:SearchConfig	file:
+filters	services/base/search/SearchConfig.java	/^    private Map<String, Object> filters;$/;"	f	class:SearchConfig	file:
+findAll	repositories/custom/GenericRepository.java	/^    Page<T> findAll(Predicate predicate, Pageable pageable, List<String> fetchFields);$/;"	m	interface:GenericRepository
+findAll	repositories/custom/GenericRepositoryImpl.java	/^    public final Page<T> findAll(Predicate predicate, Pageable pageable, List<String> fetchField/;"	m	class:GenericRepositoryImpl
+findById	rest/controller/base/CrudController.java	/^	public ResponseEntity<T> findById(@PathVariable(value="id") Long id, @RequestParam(value="fetch/;"	m	class:CrudController
+findById	services/base/BaseService.java	/^    public T findById(Long id) {$/;"	m	class:BaseService
+findById	services/base/BaseService.java	/^    public T findById(Long id, List<String> fetchFields) {$/;"	m	class:BaseService
+findById	services/base/DynamicTypeService.java	/^    public BaseEntity findById(Class entityClass, Long id) {$/;"	m	class:DynamicTypeService
+findById	services/base/Service.java	/^    T findById(Long id);$/;"	m	interface:Service
+findById	services/base/Service.java	/^    T findById(Long id, List<String> fetchFields);$/;"	m	interface:Service
+findOne	repositories/custom/GenericRepository.java	/^    T findOne(ID id, List<String> fetchFields);$/;"	m	interface:GenericRepository
+findOne	repositories/custom/GenericRepositoryImpl.java	/^    public final T findOne(ID id, List<String> fetchFields) {$/;"	m	class:GenericRepositoryImpl
+firstRow	services/base/search/SearchConfig.java	/^    private int firstRow;$/;"	f	class:SearchConfig	file:
+getAliasName	services/base/BaseService.java	/^    private String getAliasName(@SuppressWarnings("rawtypes") Class clazz) {$/;"	m	class:BaseService	file:
+getEnumConstants	services/base/BaseService.java	/^    public List<Object> getEnumConstants(String fieldName) {$/;"	m	class:BaseService
+getEnumConstants	services/base/Service.java	/^    List<Object> getEnumConstants(String fieldName);$/;"	m	interface:Service
+getId	model/base/IEntity.java	/^    Long getId();$/;"	m	interface:IEntity
+getNumber	services/base/BaseService.java	/^    private Number getNumber(Class clazz, String filter) {$/;"	m	class:BaseService	file:
+getPredicate	services/base/BaseService.java	/^    protected Predicate getPredicate(SearchConfig config) {$/;"	m	class:BaseService
+getRepository	services/AccountService.java	/^    protected JpaRepository<Account, Long> getRepository() {$/;"	m	class:AccountService
+getRepository	services/CityService.java	/^    protected JpaRepository<City, Long> getRepository() {$/;"	m	class:CityService
+getRepository	services/CustomerService.java	/^    protected JpaRepository<Customer, Long> getRepository() {$/;"	m	class:CustomerService
+getRepository	services/OperationService.java	/^    protected JpaRepository<Operation, Long> getRepository() {$/;"	m	class:OperationService
+getRepository	services/UserService.java	/^    protected JpaRepository<User, Long> getRepository(){$/;"	m	class:UserService
+getRepository	services/base/BaseService.java	/^    protected abstract JpaRepository<T, Long> getRepository();$/;"	m	class:BaseService
+getRepositoryBaseClass	repositories/custom/DefaultRepositoryFactory.java	/^	protected Class<?> getRepositoryBaseClass(RepositoryMetadata metadata) {$/;"	m	class:DefaultRepositoryFactory
+getService	rest/controller/AccountRestController.java	/^	public Service<Account> getService() {$/;"	m	class:AccountRestController
+getService	rest/controller/CityRestController.java	/^	public Service<City> getService() {$/;"	m	class:CityRestController
+getService	rest/controller/CustomerRestController.java	/^	public Service<Customer> getService() {$/;"	m	class:CustomerRestController
+getService	rest/controller/OperationRestController.java	/^	public Service<Operation> getService() {$/;"	m	class:OperationRestController
+getService	rest/controller/UserRestController.java	/^    public Service<User> getService(){$/;"	m	class:UserRestController
+getService	rest/controller/base/CrudController.java	/^	public abstract Service<T> getService();$/;"	m	class:CrudController
+getTargetRepository	repositories/custom/DefaultRepositoryFactory.java	/^	protected <T, ID extends Serializable> SimpleJpaRepository<?, ?> getTargetRepository($/;"	m	class:DefaultRepositoryFactory
+handleConstraintViolationExceptions	rest/controller/base/ErrorHandlingController.java	/^    public ErrorDTO handleConstraintViolationExceptions(ConstraintViolationException exception, /;"	m	class:ErrorHandlingController
+handleEntityNotFoundExceptions	rest/controller/base/ErrorHandlingController.java	/^    public ErrorDTO handleEntityNotFoundExceptions(EntityNotFoundException exception, HttpServle/;"	m	class:ErrorHandlingController
+handleExceptions	rest/controller/base/ErrorHandlingController.java	/^    public ErrorDTO handleExceptions(Exception exception, HttpServletResponse response) {$/;"	m	class:ErrorHandlingController
+id	model/base/BaseEntity.java	/^    private Long id;$/;"	f	class:BaseEntity	file:
+initBinder	rest/controller/base/CrudController.java	/^	public void initBinder(WebDataBinder binder) {$/;"	m	class:CrudController
+isTransient	model/base/BaseEntity.java	/^    public boolean isTransient() {$/;"	m	class:BaseEntity
+isTransient	model/base/IEntity.java	/^    boolean isTransient();$/;"	m	interface:IEntity
+label	model/OperationType.java	/^    private String label;$/;"	f	class:OperationType	file:
+list	services/base/BaseService.java	/^    public List<T> list() {$/;"	m	class:BaseService
+list	services/base/BaseService.java	/^    public List<T> list(final SearchConfig config) {$/;"	m	class:BaseService
+list	services/base/Service.java	/^    List<T> list();$/;"	m	interface:Service
+list	services/base/Service.java	/^    List<T> list(SearchConfig config);$/;"	m	interface:Service
+listAll	rest/controller/base/CrudController.java	/^	public ResponseEntity<List<T>> listAll() {$/;"	m	class:CrudController
+listAllEnumValues	rest/controller/base/CrudController.java	/^	public ResponseEntity<List<Object>> listAllEnumValues(@RequestParam("fieldName") String fieldNa/;"	m	class:CrudController
+log	rest/controller/base/ErrorHandlingController.java	/^    private final Logger log = Logger.getLogger(ErrorHandlingController.class.getName());$/;"	f	class:ErrorHandlingController	file:
+log	services/base/BaseService.java	/^    private final Logger log = Logger.getLogger(BaseService.class.getName());$/;"	f	class:BaseService	file:
+log	services/base/search/SearchConfigEditor.java	/^    private final Logger log = Logger.getLogger(SearchConfigEditor.class.getName());$/;"	f	class:SearchConfigEditor	file:
+lookup	services/base/converters/EnumAndEntityConvertUtilsBean.java	/^    public Converter lookup(Class clazz) {$/;"	m	class:EnumAndEntityConvertUtilsBean
+name	model/City.java	/^    private String name;$/;"	f	class:City	file:
+name	model/Customer.java	/^    private String name;$/;"	f	class:Customer	file:
+name	model/User.java	/^    private String name;$/;"	f	class:User	file:
+numberOfRows	services/base/search/SearchConfig.java	/^    private int numberOfRows;$/;"	f	class:SearchConfig	file:
+openingDate	model/Account.java	/^    private LocalDate openingDate;$/;"	f	class:Account	file:
+operationDate	model/Operation.java	/^    private LocalDateTime operationDate;$/;"	f	class:Operation	file:
+operationName	model/Operation.java	/^    private String operationName;$/;"	f	class:Operation	file:
+operationService	rest/controller/OperationRestController.java	/^    private OperationService operationService;$/;"	f	class:OperationRestController	file:
+operationType	model/Operation.java	/^    private OperationType operationType;$/;"	f	class:Operation	file:
+operations	model/Account.java	/^    private List<Operation> operations;$/;"	f	class:Account	file:
+ordering	services/base/search/SearchConfig.java	/^    private Direction ordering;$/;"	f	class:SearchConfig	file:
+path	repositories/custom/GenericRepositoryImpl.java	/^    private final EntityPath<T> path;$/;"	f	class:GenericRepositoryImpl	file:
+phone	model/Customer.java	/^    private String phone;$/;"	f	class:Customer	file:
+phone	model/User.java	/^    private String phone;$/;"	f	class:User	file:
+processNonStandardFilters	services/base/BaseService.java	/^    protected BooleanExpression processNonStandardFilters(Map<String, Object> filters, List<Stri/;"	m	class:BaseService
+querydsl	repositories/custom/GenericRepositoryImpl.java	/^    private final Querydsl querydsl;$/;"	f	class:GenericRepositoryImpl	file:
+registerConverters	services/base/converters/EnumAndEntityConvertUtilsBean.java	/^    public void registerConverters() {$/;"	m	class:EnumAndEntityConvertUtilsBean
+removeUsedFilters	services/base/BaseService.java	/^    private Map<String, Object> removeUsedFilters(List<String> filtersToRemove, Map<String, Obje/;"	m	class:BaseService	file:
+repository	services/AccountService.java	/^    private AccountRepository repository;$/;"	f	class:AccountService	file:
+repository	services/CityService.java	/^    private CityRepository repository;$/;"	f	class:CityService	file:
+repository	services/CustomerService.java	/^    private CustomerRepository repository;$/;"	f	class:CustomerService	file:
+repository	services/OperationService.java	/^    private OperationRepository repository;$/;"	f	class:OperationService	file:
+repository	services/UserService.java	/^    private UserRepository repository;$/;"	f	class:UserService	file:
+ru.uchkur.jackson.databind	jackson/databind/CustomObjectMapper.java	/^package ru.uchkur.jackson.databind;$/;"	p
+ru.uchkur.jackson.databind	jackson/databind/package-info.java	/^package ru.uchkur.jackson.databind;$/;"	p
+ru.uchkur.model	model/Account.java	/^package ru.uchkur.model;$/;"	p
+ru.uchkur.model	model/City.java	/^package ru.uchkur.model;$/;"	p
+ru.uchkur.model	model/Customer.java	/^package ru.uchkur.model;$/;"	p
+ru.uchkur.model	model/Operation.java	/^package ru.uchkur.model;$/;"	p
+ru.uchkur.model	model/OperationType.java	/^package ru.uchkur.model;$/;"	p
+ru.uchkur.model	model/User.java	/^package ru.uchkur.model;$/;"	p
+ru.uchkur.model	model/package-info.java	/^package ru.uchkur.model;$/;"	p
+ru.uchkur.model.base	model/base/BaseEntity.java	/^package ru.uchkur.model.base;$/;"	p
+ru.uchkur.model.base	model/base/IEntity.java	/^package ru.uchkur.model.base;$/;"	p
+ru.uchkur.model.base	model/base/package-info.java	/^package ru.uchkur.model.base;$/;"	p
+ru.uchkur.repositories	repositories/AccountRepository.java	/^package ru.uchkur.repositories;$/;"	p
+ru.uchkur.repositories	repositories/CityRepository.java	/^package ru.uchkur.repositories;$/;"	p
+ru.uchkur.repositories	repositories/CustomerRepository.java	/^package ru.uchkur.repositories;$/;"	p
+ru.uchkur.repositories	repositories/OperationRepository.java	/^package ru.uchkur.repositories;$/;"	p
+ru.uchkur.repositories	repositories/UserRepository.java	/^package ru.uchkur.repositories;$/;"	p
+ru.uchkur.repositories	repositories/package-info.java	/^package ru.uchkur.repositories;$/;"	p
+ru.uchkur.repositories.custom	repositories/custom/DefaultRepositoryFactory.java	/^package ru.uchkur.repositories.custom;$/;"	p
+ru.uchkur.repositories.custom	repositories/custom/DefaultRepositoryFactoryBean.java	/^package ru.uchkur.repositories.custom;$/;"	p
+ru.uchkur.repositories.custom	repositories/custom/GenericRepository.java	/^package ru.uchkur.repositories.custom;$/;"	p
+ru.uchkur.repositories.custom	repositories/custom/GenericRepositoryImpl.java	/^package ru.uchkur.repositories.custom;$/;"	p
+ru.uchkur.repositories.custom	repositories/custom/package-info.java	/^package ru.uchkur.repositories.custom;$/;"	p
+ru.uchkur.rest.controller	rest/controller/AccountRestController.java	/^package ru.uchkur.rest.controller;$/;"	p
+ru.uchkur.rest.controller	rest/controller/CityRestController.java	/^package ru.uchkur.rest.controller;$/;"	p
+ru.uchkur.rest.controller	rest/controller/CustomerRestController.java	/^package ru.uchkur.rest.controller;$/;"	p
+ru.uchkur.rest.controller	rest/controller/OperationRestController.java	/^package ru.uchkur.rest.controller;$/;"	p
+ru.uchkur.rest.controller	rest/controller/UserRestController.java	/^package ru.uchkur.rest.controller;$/;"	p
+ru.uchkur.rest.controller	rest/controller/package-info.java	/^package ru.uchkur.rest.controller;$/;"	p
+ru.uchkur.rest.controller.base	rest/controller/base/CrudController.java	/^package ru.uchkur.rest.controller.base;$/;"	p
+ru.uchkur.rest.controller.base	rest/controller/base/ErrorDTO.java	/^package ru.uchkur.rest.controller.base;$/;"	p
+ru.uchkur.rest.controller.base	rest/controller/base/ErrorHandlingController.java	/^package ru.uchkur.rest.controller.base;$/;"	p
+ru.uchkur.rest.controller.base	rest/controller/base/package-info.java	/^package ru.uchkur.rest.controller.base;$/;"	p
+ru.uchkur.services	services/AccountService.java	/^package ru.uchkur.services;$/;"	p
+ru.uchkur.services	services/CityService.java	/^package ru.uchkur.services;$/;"	p
+ru.uchkur.services	services/CustomerService.java	/^package ru.uchkur.services;$/;"	p
+ru.uchkur.services	services/OperationService.java	/^package ru.uchkur.services;$/;"	p
+ru.uchkur.services	services/UserService.java	/^package ru.uchkur.services;$/;"	p
+ru.uchkur.services	services/package-info.java	/^package ru.uchkur.services;$/;"	p
+ru.uchkur.services.base	services/base/BaseService.java	/^package ru.uchkur.services.base;$/;"	p
+ru.uchkur.services.base	services/base/DynamicTypeService.java	/^package ru.uchkur.services.base;$/;"	p
+ru.uchkur.services.base	services/base/Service.java	/^package ru.uchkur.services.base;$/;"	p
+ru.uchkur.services.base	services/base/package-info.java	/^package ru.uchkur.services.base;$/;"	p
+ru.uchkur.services.base.converters	services/base/converters/DateTimeConverter.java	/^package ru.uchkur.services.base.converters;$/;"	p
+ru.uchkur.services.base.converters	services/base/converters/EntityConverter.java	/^package ru.uchkur.services.base.converters;$/;"	p
+ru.uchkur.services.base.converters	services/base/converters/EnumAndEntityConvertUtilsBean.java	/^package ru.uchkur.services.base.converters;$/;"	p
+ru.uchkur.services.base.converters	services/base/converters/EnumConverter.java	/^package ru.uchkur.services.base.converters;$/;"	p
+ru.uchkur.services.base.converters	services/base/converters/package-info.java	/^package ru.uchkur.services.base.converters;$/;"	p
+ru.uchkur.services.base.search	services/base/search/SearchConfig.java	/^package ru.uchkur.services.base.search;$/;"	p
+ru.uchkur.services.base.search	services/base/search/SearchConfigEditor.java	/^package ru.uchkur.services.base.search;$/;"	p
+ru.uchkur.services.base.search	services/base/search/package-info.java	/^package ru.uchkur.services.base.search;$/;"	p
+search	rest/controller/base/CrudController.java	/^	public ResponseEntity<List<T>> search(@RequestParam("searchConfig") SearchConfig searchConfig) /;"	m	class:CrudController
+serialVersionUID	model/Account.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:Account	file:
+serialVersionUID	model/City.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:City	file:
+serialVersionUID	model/Customer.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:Customer	file:
+serialVersionUID	model/Operation.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:Operation	file:
+serialVersionUID	model/User.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:User	file:
+serialVersionUID	model/base/BaseEntity.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:BaseEntity	file:
+serialVersionUID	repositories/custom/GenericRepositoryImpl.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:GenericRepositoryImpl	file:
+serialVersionUID	services/AccountService.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:AccountService	file:
+serialVersionUID	services/CityService.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:CityService	file:
+serialVersionUID	services/CustomerService.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:CustomerService	file:
+serialVersionUID	services/OperationService.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:OperationService	file:
+serialVersionUID	services/UserService.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:UserService	file:
+serialVersionUID	services/base/BaseService.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:BaseService	file:
+serialVersionUID	services/base/DynamicTypeService.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:DynamicTypeService	file:
+serialVersionUID	services/base/search/SearchConfig.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:SearchConfig	file:
+setAsText	services/base/search/SearchConfigEditor.java	/^    public void setAsText(String text) throws IllegalArgumentException {$/;"	m	class:SearchConfigEditor
+sortField	services/base/search/SearchConfig.java	/^    private String sortField;$/;"	f	class:SearchConfig	file:
+update	rest/controller/base/CrudController.java	/^	public ResponseEntity update(@PathVariable Long id, @RequestBody Map<String, Object> updatedFie/;"	m	class:CrudController
+update	services/base/BaseService.java	/^    public void update(Long id, Map<String, Object> updatedFields) {$/;"	m	class:BaseService
+update	services/base/BaseService.java	/^    public void update(T entity) {$/;"	m	class:BaseService
+update	services/base/Service.java	/^    void update(Long id, Map<String, Object> updatedFields);$/;"	m	interface:Service
+update	services/base/Service.java	/^    void update(T entity);$/;"	m	interface:Service
+userService	rest/controller/UserRestController.java	/^    private UserService userService;$/;"	f	class:UserRestController	file:
+version	model/base/BaseEntity.java	/^    private Long version;$/;"	f	class:BaseEntity	file:
